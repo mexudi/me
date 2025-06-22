@@ -939,3 +939,76 @@ section {
     font-size: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
+
+
+/*
+add new style for the play/pause button
+*/
+.slideshow-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #0073e6; /* Blue border */
+  background-color: white;
+  color: #0073e6;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+.slideshow-btn:hover {
+  background-color: #e6f0ff;
+  transform: scale(1.05);
+}
+
+.slideshow-btn-wrapper {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg); /* Start from top */
+}
+
+.progress-ring__circle {
+  fill: transparent;
+  stroke: #0073e6;
+  stroke-width: 4;
+  stroke-dasharray: 125.6; /* 2πr = 2*3.14*20 */
+  stroke-dashoffset: 125.6;
+  transition: stroke-dashoffset 3s linear;
+}
+
+.slideshow-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  color: #0073e6;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
