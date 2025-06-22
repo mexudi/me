@@ -21,18 +21,27 @@
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/profile.jpeg" alt="">
+                <div class="image" style="position: relative;">
+                    <img id="slideshow" src="img/me1.png" alt="" style="display: block; width: 100%;">
+                    
+                    <!-- Progress Button Container -->
+                    <div class="slideshow-btn-wrapper">
+                        <svg class="progress-ring" width="44" height="44">
+                            <circle class="progress-ring__circle" r="20" cx="22" cy="22" />
+                        </svg>
+                        <button id="toggleSlideshow" class="slideshow-btn" aria-label="Play/Pause Slideshow">⏸</button>
+                    </div>
                 </div>
             </div>
+                        
             <div class="right-header">
                 <h1 class="name">
                     I'm <span>Soufiane Lamchoudi.</span>
-                    A Data Science Student.
+                    Lead Analytics Engineer.
                 </h1>
                 <p>
-                    I am a Data Science Student; I love what I study because I believe in the quotes that says “The best way to learn data
-                    science is to do data science". I love trying new things because the good feeling it has on me.
+                    As a Lead Analytics Engineer I am blending data science expertise with a focus on building optimized, scalable data solutions. 
+                    I dive deep into data to surface insights and engineer high-performing systems that drive smarter decisions.
                 </p>
                 <div class="btn-con">
                     <a href="" class="main-btn">
