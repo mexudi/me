@@ -18,7 +18,7 @@
     let index = 0;
     let intervalId;
     let isPlaying = true;
-    const duration = 3000;
+    const duration = 5000;
     const imgElement = document.getElementById("slideshow");
     const toggleButton = document.getElementById("toggleSlideshow");
     const progressCircle = document.querySelector(".progress-ring__circle");
